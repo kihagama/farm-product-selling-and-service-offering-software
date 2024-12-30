@@ -1,0 +1,165 @@
+header {
+    background-image: url("ImagesAg/pexels-jahoo-388415.jpg" );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    padding: 1rem 1rem;
+    text-align: center;
+    margin-top: 4%;
+    height: 405px;
+    align-items: center;
+}
+header h1 {
+    margin-top: 15%;
+    font-size: 2.5rem;
+    font-style: bold;
+}
+header p {
+    margin: 0;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+.content {
+    padding: 2rem 1rem;
+    background-image: url("ImagesAg/pic09.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content h2 {
+    color: #f7fbf9;
+    text-align: center;
+}
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.section div {
+    flex: 1 1 45%;
+    max-width: 45%;
+}
+.section div img {
+    width: 100%;
+    border-radius: 8px;
+}
+.section div p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.cta {
+    text-align: center;
+    margin-top: 3rem;
+}
+.cta a {
+    text-decoration: none;
+    background: #34a56f;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+.cta a:hover {
+    background: #2b8a5e;
+}
+.contact-info {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+.contact-info a {
+    color: #34a56f;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contact-info a:hover {
+    text-decoration: underline;
+}
+.contact-form {
+    margin: 2rem auto;
+    max-width: 600px;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #d8d5d5;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.contact-form input, .contact-form textarea {
+    width: 80%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #7a7979;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.contact-form button {
+    background: #34a56f;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.contact-form button:hover {
+    background: #2b8a5e;
+}
+
+
+@media screen and (max-width: 768px) {
+    .section div {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    header h1 {
+        margin-top: 25%;
+        
+    }
+}
+/* Apply fade and slide effect */
+.fade-slide-in-header {
+    opacity: 0; /* Start invisible */
+    transform: translateY(50px); /* Start slightly below */
+    animation: fadeSlideIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Combine fadeIn and slideIn effects */
+@keyframes fadeSlideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

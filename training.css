@@ -1,0 +1,200 @@
+   /* General Styles */
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #4CAF50; /* Green color for officer names */
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.card button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #45a049;
+}
+
+/* Officers Section */
+#officers {
+    padding: 50px 0;
+    background-image: url('ImagesAg/tractor.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-top: 40px;
+    
+}
+
+.officers-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.officers-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .card {
+        padding: 15px;
+    }
+    #booking-overlay .form-container {
+    background: rgba(5, 5, 5, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    width: 1%;
+    
+    max-width: 400px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border: 2px solid rgba(35, 33, 33, 0.8);
+    margin-bottom: 35% !important;
+}
+}
+/* Overlay for the booking modal */
+#booking-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+/* Container for the booking form */
+#booking-overlay .form-container {
+    background: rgba(5, 5, 5, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+    width: 70%;
+    
+    max-width: 400px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border: 2px solid rgba(35, 33, 33, 0.8);
+    margin-bottom: 23% !important;
+}
+
+#booking-overlay .form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: white;
+}
+#booking-overlay .form-container form{
+    display: block;
+}
+
+#booking-overlay .form-container input,
+#booking-overlay .form-container textarea {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #e3e1e1;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#booking-overlay .form-container button {
+    width: 35%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#booking-overlay .form-container button:hover {
+    background-color: #218838;
+}
+
+/* Style the small close button */
+.close-btn {
+    position: absolute;
+    top: 5px; 
+    right: 5px; 
+    background-color: red !important;
+    border: none;
+    color: white;
+    font-size: 20px; 
+    cursor: pointer;
+    padding: 8px; 
+    border-radius: 50%; 
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect */
+.close-btn:hover {
+    background-color: darkred; 
+    transform: scale(1.1); 
+}
+
+/* Active effect */
+.close-btn:active {
+    background-color: maroon; 
+}
+       
